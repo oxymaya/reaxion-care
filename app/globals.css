@@ -4,50 +4,50 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* REAXION CARE — 清潔感のある淡いブルー・グレー・ホワイト基調 */
-  --background: oklch(0.99 0.003 220);
-  --foreground: oklch(0.2 0.01 240);
+  /* REAXION CARE — 清潔感のある淡い緑・グレー・ホワイト基調 */
+  --background: oklch(0.99 0.003 140);
+  --foreground: oklch(0.2 0.01 150);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.2 0.01 240);
+  --card-foreground: oklch(0.2 0.01 150);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.2 0.01 240);
-  --primary: oklch(0.45 0.1 230);
+  --popover-foreground: oklch(0.2 0.01 150);
+  --primary: oklch(0.45 0.1 140);
   --primary-foreground: oklch(0.99 0 0);
-  --secondary: oklch(0.95 0.01 220);
-  --secondary-foreground: oklch(0.3 0.01 240);
-  --muted: oklch(0.96 0.008 220);
-  --muted-foreground: oklch(0.5 0.015 230);
-  --accent: oklch(0.9 0.025 220);
-  --accent-foreground: oklch(0.25 0.02 240);
+  --secondary: oklch(0.95 0.01 140);
+  --secondary-foreground: oklch(0.3 0.01 150);
+  --muted: oklch(0.96 0.008 140);
+  --muted-foreground: oklch(0.5 0.015 145);
+  --accent: oklch(0.9 0.025 140);
+  --accent-foreground: oklch(0.25 0.02 150);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.577 0.245 27.325);
-  --border: oklch(0.9 0.012 225);
-  --input: oklch(0.93 0.01 225);
-  --ring: oklch(0.55 0.08 230);
-  --chart-1: oklch(0.5 0.12 230);
-  --chart-2: oklch(0.65 0.08 200);
-  --chart-3: oklch(0.75 0.05 225);
-  --chart-4: oklch(0.4 0.09 250);
-  --chart-5: oklch(0.6 0.1 210);
+  --border: oklch(0.9 0.012 145);
+  --input: oklch(0.93 0.01 145);
+  --ring: oklch(0.55 0.08 140);
+  --chart-1: oklch(0.5 0.12 140);
+  --chart-2: oklch(0.65 0.08 120);
+  --chart-3: oklch(0.75 0.05 145);
+  --chart-4: oklch(0.4 0.09 160);
+  --chart-5: oklch(0.6 0.1 130);
   --radius: 0.5rem;
-  --sidebar: oklch(0.97 0.008 225);
-  --sidebar-foreground: oklch(0.2 0.01 240);
-  --sidebar-primary: oklch(0.45 0.1 230);
+  --sidebar: oklch(0.97 0.008 145);
+  --sidebar-foreground: oklch(0.2 0.01 150);
+  --sidebar-primary: oklch(0.45 0.1 140);
   --sidebar-primary-foreground: oklch(0.99 0 0);
-  --sidebar-accent: oklch(0.93 0.015 220);
-  --sidebar-accent-foreground: oklch(0.25 0.02 240);
-  --sidebar-border: oklch(0.9 0.012 225);
-  --sidebar-ring: oklch(0.55 0.08 230);
+  --sidebar-accent: oklch(0.93 0.015 140);
+  --sidebar-accent-foreground: oklch(0.25 0.02 150);
+  --sidebar-border: oklch(0.9 0.012 145);
+  --sidebar-ring: oklch(0.55 0.08 140);
   /* カスタムトークン */
-  --hero-bg: oklch(0.97 0.015 225);
-  --section-alt: oklch(0.965 0.012 222);
-  --divider: oklch(0.88 0.015 225);
-  --brand-blue: oklch(0.45 0.1 230);
-  --brand-blue-light: oklch(0.88 0.04 225);
-  --brand-blue-mid: oklch(0.65 0.07 228);
-  --text-heading: oklch(0.18 0.02 240);
-  --text-body: oklch(0.35 0.015 235);
-  --text-caption: oklch(0.55 0.015 230);
+  --hero-bg: oklch(0.97 0.015 145);
+  --section-alt: oklch(0.965 0.012 142);
+  --divider: oklch(0.88 0.015 145);
+  --brand-blue: oklch(0.45 0.1 140);
+  --brand-blue-light: oklch(0.88 0.04 145);
+  --brand-blue-mid: oklch(0.65 0.07 148);
+  --text-heading: oklch(0.18 0.02 150);
+  --text-body: oklch(0.35 0.015 145);
+  --text-caption: oklch(0.55 0.015 140);
 }
 
 .dark {
