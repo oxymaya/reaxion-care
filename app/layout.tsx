@@ -154,6 +154,10 @@ const jsonLdFaq = {
   ],
 }
 
+const jsonLdProductString = JSON.stringify(jsonLdProduct)
+const jsonLdOrganizationString = JSON.stringify(jsonLdOrganization)
+const jsonLdFaqString = JSON.stringify(jsonLdFaq)
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -164,15 +168,18 @@ export default function RootLayout({
       <head>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdProduct) }}
+          dangerouslySetInnerHTML={{ __html: jsonLdProductString }}
+          suppressHydrationWarning
         />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdOrganization) }}
+          dangerouslySetInnerHTML={{ __html: jsonLdOrganizationString }}
+          suppressHydrationWarning
         />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFaq) }}
+          dangerouslySetInnerHTML={{ __html: jsonLdFaqString }}
+          suppressHydrationWarning
         />
       </head>
       <body className={`${notoSansJP.variable} font-sans antialiased`}>
