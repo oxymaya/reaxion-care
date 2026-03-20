@@ -93,6 +93,67 @@ export const metadata: Metadata = {
   },
 }
 
+const jsonLdProduct = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  name: "REAXION CARE",
+  description: "高齢者の注意機能および反応能力を評価し、日常生活動作の安全性向上と転倒リスク低減を支援する機能訓練支援デバイス。",
+  brand: { "@type": "Brand", name: "REAXION" },
+  manufacturer: { "@type": "Organization", name: "株式会社スマートスタート", url: "https://smasta.co.jp" },
+  offers: {
+    "@type": "Offer",
+    price: "298000",
+    priceCurrency: "JPY",
+    availability: "https://schema.org/InStock",
+    seller: { "@type": "Organization", name: "株式会社スマートスタート" },
+  },
+  category: "機能訓練支援機器",
+}
+
+const jsonLdOrganization = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "株式会社スマートスタート",
+  url: "https://smasta.co.jp",
+  contactPoint: {
+    "@type": "ContactPoint",
+    telephone: "+81-3-3556-9988",
+    contactType: "sales",
+    areaServed: "JP",
+    availableLanguage: "Japanese",
+  },
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "六番町1-1恩田ビル3階",
+    addressLocality: "千代田区",
+    addressRegion: "東京都",
+    postalCode: "102-0085",
+    addressCountry: "JP",
+  },
+}
+
+const jsonLdFaq = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "REAXION CAREとは何ですか？",
+      acceptedAnswer: { "@type": "Answer", text: "高齢者の注意機能および反応能力を評価し、転倒リスク低減を支援する機能訓練支援デバイスです。" },
+    },
+    {
+      "@type": "Question",
+      name: "価格はいくらですか？",
+      acceptedAnswer: { "@type": "Answer", text: "本体、タブレット、什器、3年間クラウド利用料込みで298,000円（税別）です。" },
+    },
+    {
+      "@type": "Question",
+      name: "LIFEとの連携はできますか？",
+      acceptedAnswer: { "@type": "Answer", text: "はい、LIFEフォーマット準拠のCSV出力に対応しています。" },
+    },
+  ],
+}
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -100,6 +161,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdProduct) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdOrganization) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdFaq) }}
+        />
+      </head>
       <body className={`${notoSansJP.variable} font-sans antialiased`}>
         {children}
         <Analytics />

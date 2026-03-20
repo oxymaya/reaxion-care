@@ -192,6 +192,17 @@ export function SystemSection() {
                   <span className="text-[var(--text-body)]">科学的介護情報システム（LIFE）フォーマット準拠のCSV出力</span>
                 </li>
               </ul>
+              <div className="mt-6 pt-6 border-t border-[var(--border)]">
+                <a 
+                  href="https://reaxioncloud.jp" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="inline-flex items-center justify-center gap-2 w-full px-6 py-3 bg-[var(--brand-blue)] text-white text-sm font-medium rounded-lg hover:bg-[var(--brand-blue)]/90 transition-colors"
+                >
+                  REAXION CLOUDで詳細を見る
+                  <ArrowRight className="w-4 h-4" />
+                </a>
+              </div>
             </div>
           </div>
         </div>

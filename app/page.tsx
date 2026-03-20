@@ -1,4 +1,3 @@
-import { JsonLd } from "@/components/reaxion/json-ld"
 import { Header } from "@/components/reaxion/header"
 import { HeroSection } from "@/components/reaxion/hero-section"
 import { OverviewSection } from "@/components/reaxion/overview-section"
@@ -21,9 +20,7 @@ import { Footer } from "@/components/reaxion/footer"
 
 export default function ReaxionCarePage() {
   return (
-    <>
-      <JsonLd />
-      <main className="min-h-screen">
+    <main className="min-h-screen">
         <Header />
         <HeroSection />
         <OverviewSection />
@@ -42,8 +39,7 @@ export default function ReaxionCarePage() {
         <DisclaimerSection />
         <ContactSection />
         <InquiryFormSection />
-        <Footer />
-      </main>
-    </>
+      <Footer />
+    </main>
   )
 }

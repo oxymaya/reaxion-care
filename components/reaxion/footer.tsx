@@ -15,6 +15,14 @@ export function Footer() {
               転倒リスクを可視化する機能訓練支援デバイス<br />
               型番：RX-CAR-01-6P
             </p>
+            <a 
+              href="https://reaxioncloud.jp" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-xs text-[var(--brand-blue-mid)] hover:text-white transition-colors"
+            >
+              REAXION CLOUD（管理画面詳細） →
+            </a>
           </div>
 
           {/* 連絡先 */}
