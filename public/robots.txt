@@ -1,0 +1,9 @@
+# REAXION CARE - robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://reaxioncare.jp/sitemap.xml
+
+# Crawl-delay (optional, for polite crawling)
+Crawl-delay: 1
