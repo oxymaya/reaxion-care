@@ -145,11 +145,6 @@ export function SystemSection() {
                 <h3 className="text-lg font-bold text-[var(--text-heading)]">管理画面</h3>
               </div>
               <p className="text-sm text-[var(--text-caption)]">Webブラウザからアクセス可能</p>
-              <p className="text-xs text-[var(--brand-blue)] mt-2">
-                <a href="https://reaxioncloud.jp" target="_blank" rel="noopener noreferrer" className="underline hover:no-underline">
-                  REAXION CLOUDで詳細を見る →
-                </a>
-              </p>
             </div>
             <div className="p-6">
               <div className="aspect-[4/3] bg-white rounded-xl border border-[var(--border)] p-4 mb-6">
@@ -197,6 +192,17 @@ export function SystemSection() {
                   <span className="text-[var(--text-body)]">科学的介護情報システム（LIFE）フォーマット準拠のCSV出力</span>
                 </li>
               </ul>
+              <div className="mt-6 pt-6 border-t border-[var(--border)]">
+                <a 
+                  href="https://reaxioncloud.jp" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="inline-flex items-center justify-center gap-2 w-full px-6 py-3 bg-[var(--brand-blue)] text-white text-sm font-medium rounded-lg hover:bg-[var(--brand-blue)]/90 transition-colors"
+                >
+                  REAXION CLOUDで詳細を見る
+                  <ArrowRight className="w-4 h-4" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
