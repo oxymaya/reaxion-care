@@ -145,6 +145,11 @@ export function SystemSection() {
                 <h3 className="text-lg font-bold text-[var(--text-heading)]">管理画面</h3>
               </div>
               <p className="text-sm text-[var(--text-caption)]">Webブラウザからアクセス可能</p>
+              <p className="text-xs text-[var(--brand-blue)] mt-2">
+                <a href="https://reaxioncloud.jp" target="_blank" rel="noopener noreferrer" className="underline hover:no-underline">
+                  REAXION CLOUDで詳細を見る →
+                </a>
+              </p>
             </div>
             <div className="p-6">
               <div className="aspect-[4/3] bg-white rounded-xl border border-[var(--border)] p-4 mb-6">
